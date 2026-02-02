@@ -1,0 +1,111 @@
+{
+  "users": [
+    {
+      "id": "u001",
+      "name": "John Doe",
+      "email": "john@email.com",
+      "password": "password123",
+      "role": "customer",
+      "createdAt": "2024-06-15T10:00:00Z"
+    },
+    {
+      "id": "52c7",
+      "name": "Daniela G",
+      "email": "danigq000@gmail.com",
+      "password": "123456",
+      "role": "admin"
+    }
+  ],
+  "products": [
+    {
+      "id": "p001",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSP8mY1YTlIdWG3_mRv1FuiK2yFCTetMd-BQ&s",
+      "name": "Hamburguer",
+      "description": "A delicious beef hamburger with lettuce, tomato, and cheese.",
+      "price": 29.99,
+      "stock": 150,
+      "category": "Burgers"
+    },
+    {
+      "id": "6c99",
+      "name": "Coca-Cola",
+      "price": 5,
+      "category": "Drinks",
+      "stock": 25,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0YImoMAl4lcov8rUNh23WLH7Mzwjo6DyTkw&s",
+      "description": "Bebida gaseosa"
+    }
+  ],
+  "orders": [
+    {
+      "id": "o001",
+      "userId": "u001",
+      "products": [
+        {
+          "productId": "p001",
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 59.98,
+      "orderDate": "2024-06-15T14:30:00Z",
+      "status": "Processing"
+    },
+    {
+      "id": "e4c1",
+      "createdAt": "2026-02-01T21:10:14.446Z",
+      "userId": "52c7",
+      "user": {
+        "name": "Daniela G",
+        "email": "danigq000@gmail.com"
+      },
+      "items": [
+        {
+          "productId": "p001",
+          "name": "Hamburguer",
+          "price": 29.99,
+          "quantity": 2
+        }
+      ],
+      "total": 59.98,
+      "status": "delivered"
+    },
+    {
+      "id": "0e26",
+      "createdAt": "2026-02-01T21:50:52.313Z",
+      "userId": "52c7",
+      "user": {
+        "name": "Daniela G",
+        "email": "danigq000@gmail.com"
+      },
+      "items": [
+        {
+          "productId": "p001",
+          "name": "Hamburguer",
+          "price": 29.99,
+          "quantity": 3
+        }
+      ],
+      "total": 89.97,
+      "status": "pending"
+    },
+    {
+      "id": "4261",
+      "createdAt": "2026-02-01T21:53:23.467Z",
+      "userId": "52c7",
+      "user": {
+        "name": "Daniela G",
+        "email": "danigq000@gmail.com"
+      },
+      "items": [
+        {
+          "productId": "p001",
+          "name": "Hamburguer",
+          "price": 29.99,
+          "quantity": 6
+        }
+      ],
+      "total": 179.94,
+      "status": "pending"
+    }
+  ]
+}
